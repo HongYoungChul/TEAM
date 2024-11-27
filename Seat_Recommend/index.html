@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Seat Layout with Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="logo-container">
+    <img src="chair.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="controls">
+    <label>Choose Options:</label>
+    <label><input type="checkbox" name="options" value="corner"> 구석자리(끝자리)</label>
+    <label><input type="checkbox" name="options" value="adjacent"> 옆자리가 비어있는 자리</label>
+    <label><input type="checkbox" name="options" value="window"> 창가자리</label>
+    <button id="recommendBtn">Get Recommendations</button>
+  </div>
+
+  <div class="seat-map-wrapper">
+    <div class="seat-map-container" id="seatMapContainer"></div>
+  </div>
+
+  <div class="buttons">
+    <button id="reserveBtn" disabled>Reserve</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
